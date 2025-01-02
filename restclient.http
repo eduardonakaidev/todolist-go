@@ -1,0 +1,19 @@
+### Lista todas as tarefas
+GET http://localhost:8080/todos
+Content-Type: application/json
+
+###
+
+### Adiciona uma nova tarefa
+POST http://localhost:8080/todos
+Content-Type: application/json
+
+{
+  "title": "Nova tarefa de exemplo"
+}
+
+###
+
+### Marca uma tarefa como concluída (substitua {id} pelo ID da tarefa)
+PUT http://localhost:8080/todos/5/complete
+Content-Type: application/json
